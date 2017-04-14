@@ -4,7 +4,7 @@ The first thing to note is that transactions (txs) are executed in two places. T
 
 Transactions execute sequentially. Given a block of transactions and a state trie, the state trie is passed to the first transaction in the block, that transaction executes altering the state and the new state is passed to the next transaction. When all transactions have executed the new state trie is now the state of the ledger and will be used in subsequent block processing.
 
-When a transaction executes ##TODO load up account and sig and gas ## the contract code may call other contracts. These message calls are blocking and may be re-entrant ##TODO?## 
+When a transaction executes (after the account is debited and the sig checked etc) contract code may call other contracts. These message calls are blocking and may be re-entrant. 
 If a contract changes a value available via it's public interface and calls a second contract which access the original contract's public interface, which value does it see? ##TODO Check!
 
 ## Gas and Errors ##
