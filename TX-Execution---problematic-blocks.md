@@ -1,7 +1,11 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
 #### 62102
-In progress???
+
+In Progress.... :thinking: 
+
+#### 62102
+`SMOD` opCode was wrong
 
 #### 53145
 Logs were not discarded in the event of VM error
