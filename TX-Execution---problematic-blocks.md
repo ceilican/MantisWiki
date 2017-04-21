@@ -1,8 +1,16 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### 179332
+
+In progress... 🤔
+
+#### 153259
+
+The contract creating TX the payload was used as input data to the VM execution (it should be empty).
+
 #### 81383
 
-In progress... 🤔 
+Gas refunds were not propagated from recursive VM calls (CREATE, *CALL*).
 
 #### 73276
 
