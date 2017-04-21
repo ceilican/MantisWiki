@@ -1,8 +1,12 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### 73276
+
+In progress... 🤔
+
 #### 68460
 
-In Progress.... :thinking: 
+This was an example of YP being a little vague. It was not clear what was supposed to happen when the last stack argument (`outSize`) is greater than data returned from called contract. Now we know `outSize` should determine the memory size. See the the memory related equations in definition of `CALL`.
 
 #### 62102
 `SMOD` opCode was wrong
