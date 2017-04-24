@@ -2,7 +2,7 @@ _The purpose of this page is to keep track of all the blocks that failed to exec
 
 #### 243826
 
-When executing a contract init, the destination address might have already received funds. See YP EIP-150 REVISION eq (86).
+When executing a contract init, the destination address might have already received funds. See YP EIP-150 REVISION eq (86).PR: [#162](https://github.com/input-output-hk/etc-client/pull/162)
 
 #### 196647
 
