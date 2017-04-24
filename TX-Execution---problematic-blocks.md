@@ -1,8 +1,12 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
-#### 196647
+#### 243826
 
 In progress... 🤔 
+
+#### 196647
+
+A small bug in gas calculation for CALL prior to EIP-150 adoption. PR: [#160](https://github.com/input-output-hk/etc-client/pull/160)
 
 #### 179332
 
