@@ -2,7 +2,7 @@ _The purpose of this page is to keep track of all the blocks that failed to exec
 
 #### 179332
 
-In progress... 🤔
+MSIZE was returning memory size to the exact byte, rather than rounded up to the next 32-byte word. PR: [#154](https://github.com/input-output-hk/etc-client/pull/154)
 
 #### 153259
 
@@ -10,7 +10,7 @@ The contract creating TX the payload was used as input data to the VM execution 
 
 #### 81383
 
-Gas refunds were not propagated from recursive VM calls (CREATE, *CALL*).
+Gas refunds were not propagated from recursive VM calls (CREATE, *CALL*). PR: [#158](https://github.com/input-output-hk/etc-client/pull/158)
 
 #### 73276
 
