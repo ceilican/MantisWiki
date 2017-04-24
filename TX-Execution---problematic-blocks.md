@@ -2,7 +2,7 @@ _The purpose of this page is to keep track of all the blocks that failed to exec
 
 #### 243826
 
-In progress... 🤔 
+When executing a contract init, the destination address might have already received funds. See YP EIP-150 REVISION eq (86).
 
 #### 196647
 
