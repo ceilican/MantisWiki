@@ -10,7 +10,7 @@ MSIZE was returning memory size to the exact byte, rather than rounded up to the
 
 #### 153259
 
-The contract creating TX the payload was used as input data to the VM execution (it should be empty).
+The contract creating TX the payload was used as input data to the VM execution (it should be empty). PR: [#159]( https://github.com/input-output-hk/etc-client/pull/159)
 
 #### 81383
 
