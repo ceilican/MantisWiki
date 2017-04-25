@@ -1,5 +1,14 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### 299804
+
+In progress... handling overflows for gas calculation
+
+
+#### 244793
+
+It's another manifestation of the problem that occurred in [block 68460](#68460). [#164](https://github.com/input-output-hk/etc-client/pull/164)
+
 #### 243826
 
 When executing a contract init, the destination address might have already received funds. See YP EIP-150 REVISION eq (86).PR: [#162](https://github.com/input-output-hk/etc-client/pull/162)
@@ -26,7 +35,9 @@ Wrong handling of deleted accounts. PR: [#150](https://github.com/input-output-h
 
 #### 68460
 
-This was an example of YP being a little vague. It was not clear what was supposed to happen when the last stack argument (`outSize`) is greater than data returned from called contract. Now we know `outSize` should determine the memory size. See the the memory related equations in definition of `CALL`. PR: [#154](https://github.com/input-output-hk/etc-client/pull/154)
+~~This was an example of YP being a little vague. It was not clear what was supposed to happen when the last stack argument (`outSize`) is greater than data returned from called contract. Now we know `outSize` should determine the memory size. See the the memory related equations in definition of `CALL`. PR: [#154](https://github.com/input-output-hk/etc-client/pull/154)~~
+
+The above conclusion was incorrect (while the fix in PR #154 helped in this particular case). YP is actually clear about it, though somewhat inconsistent about updating memory contents vs expanding the memory. See equations for **_μ′<sub>m</sub>_** and **_μ′<sub>i</sub>_** (this may be required to know the memory related gas cost a priori, although another way would be to refund it). PR: [#164](https://github.com/input-output-hk/etc-client/pull/164)
 
 #### 62102
 `SMOD` opCode was wrong
