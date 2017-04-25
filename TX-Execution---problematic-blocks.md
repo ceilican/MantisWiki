@@ -37,7 +37,7 @@ Wrong handling of deleted accounts. PR: [#150](https://github.com/input-output-h
 
 ~~This was an example of YP being a little vague. It was not clear what was supposed to happen when the last stack argument (`outSize`) is greater than data returned from called contract. Now we know `outSize` should determine the memory size. See the the memory related equations in definition of `CALL`. PR: [#154](https://github.com/input-output-hk/etc-client/pull/154)~~
 
-The above conclusion was incorrect (while the fix in PR #154 helped in this particular case). YP is actually clear about it, though somewhat inconsistent about updating memory contents vs expanding the memory. See equations for **_μ′<sub>m</sub>_** and **_μ′<sub>i</sub>_** (this may be required to know the memory related gas cost a priori, although another way would be to refund it). PR: [#164](https://github.com/input-output-hk/etc-client/pull/164)
+The above conclusion was incorrect (while the fix in PR #154 helped in this particular case). YP is actually clear about it, though somewhat inconsistent about updating memory contents vs expanding the memory. See equations for **_μ′<sub>m</sub>_** and **_μ′<sub>i</sub>_** in the CALL definition (this may be required to know the memory related gas cost a priori, although another way would be to refund it). PR: [#164](https://github.com/input-output-hk/etc-client/pull/164)
 
 #### 62102
 `SMOD` opCode was wrong
