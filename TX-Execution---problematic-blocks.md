@@ -1,8 +1,11 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### 505404
+In progress...
+
 #### 299804
 
-In progress... handling overflows for gas calculation
+When calculating the gas cost of a CALL opcode, the use of UInt256 for it caused an overflow that resulted in the contract being executed instead of an OutOfGas exception. PR: [#167](https://github.com/input-output-hk/etc-client/pull/167).
 
 
 #### 244793
