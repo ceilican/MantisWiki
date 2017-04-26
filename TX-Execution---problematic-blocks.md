@@ -1,7 +1,11 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### ??????
+
+In progress... 🤔
+
 #### 549413
-In progress... 🤔 
+The stack arguments to instructions CALLDATALOAD, CALLDATACOPY, CODECOPY, EXTCODECOPY were optimistically/naively converted to `Int` resulting in potentially deadly overflows. PR [#169](https://github.com/input-output-hk/etc-client/pull/169)
 
 #### 505404
 We used a wrong hash function for the precompiled contract @ 0x02. It should be SHA-256, not KEC-256 (SHA3). PR: [#168](https://github.com/input-output-hk/etc-client/pull/168).
