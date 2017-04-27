@@ -1,8 +1,10 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
-#### ??????
+#### 1149150
 
 In progress... 🤔
+
+(Looks like errors are not propagated from a called contract to a calling parent contract 
 
 #### 549413
 The stack arguments to instructions CALLDATALOAD, CALLDATACOPY, CODECOPY, EXTCODECOPY were optimistically/naively converted to `Int` resulting in potentially deadly overflows. PR [#169](https://github.com/input-output-hk/etc-client/pull/169)
