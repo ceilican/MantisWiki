@@ -2,6 +2,8 @@ _The purpose of this page is to keep track of all the blocks that failed to exec
 
 #### 3003036
 TxsExecutionError(Left(TxsExecutionError(Account of tx sender 0xdfce88c609d54021d4ca78a550fc6ffa621ece1d not found))), in block 3003036
+The issue was that we required sender account of a transaction to be present in MPT before transaction execution, but if we are not transferring ether it is possible to issue transaction which costs 0 ether by setting the gas price to 0.
+In this case, we should create sender account with nonce 0, balance 0 and save it in MPT before transaction execution.
 
 #### 2420342
 
