@@ -1,5 +1,8 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### 3003036
+TxsExecutionError(Left(TxsExecutionError(Account of tx sender 0xdfce88c609d54021d4ca78a550fc6ffa621ece1d not found))), in block 3003036
+
 #### 2420342
 
 We did not pass addresses already market to delete to CALLs, it allowed for multiple refunds for deleting the same address. PR [#172](https://github.com/input-output-hk/etc-client/pull/172)
