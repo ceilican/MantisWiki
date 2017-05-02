@@ -2,7 +2,7 @@ _The purpose of this page is to keep track of all the blocks that failed to exec
 
 #### 2420342
 
-:confounded: 
+We did not pass addresses already market to delete to CALLs, it allowed for multiple refunds for deleting the same address. PR [#172](https://github.com/input-output-hk/etc-client/pull/172)
 
 #### 1149150
 It was related to not checking if `v` from `ECDSARECOVER` has correct value (27 or 28) and precompiled contract was not failing when it should. PR [#170](https://github.com/input-output-hk/etc-client/pull/170)
