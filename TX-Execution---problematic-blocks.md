@@ -1,5 +1,9 @@
 _The purpose of this page is to keep track of all the blocks that failed to execute while we were working on TX execution. This is just a history of problems and fixes. It should help us deal with possible regressions and provide more insight into interpretations of YP._
 
+#### 2420342
+
+:confounded: 
+
 #### 1149150
 It was related to not checking if `v` from `ECDSARECOVER` has correct value (27 or 28) and precompiled contract was not failing when it should. PR [#170](https://github.com/input-output-hk/etc-client/pull/170)
 
