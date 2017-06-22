@@ -1,6 +1,6 @@
-to setup geth - etc-client private network:
+To setup geth - etc-client private network:
 
-create file named custom.json  with blockchain definition:
+Create a file named custom.json  with blockchain definition:
 ```
 {
   "id": "custom",
@@ -98,11 +98,15 @@ create file named custom.json  with blockchain definition:
 ```
 place it in `[geth_data_dir]/custom`  directory
 
-run geth with
+run geth 3.5 with
 ```
 ./geth --chain=custom --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1
 ```
-add file with custom etc-client configuration `private-genesis.json` :
+run geth 3.4 with
+```
+./geth --chain-config="[PATH_TO_CUSTOM_JSON]" --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1
+```
+Add file with custom etc-client configuration `private-genesis.json` :
 
 ```
 {
@@ -121,15 +125,15 @@ add file with custom etc-client configuration `private-genesis.json` :
 ```
 update `application.conf`
 
-set `bootstrap-nodes`  to geth node address
+set `bootstrap-nodes` to geth node address
 set `coinbase`  to some address
 set `custom-genesis-file`  to point to `private-genesis.json` 
 set `do-fast-sync = false`
 
-you can get geth node address by adding console 
-and running geth with
+You can get geth node address by adding `console` 
+And running geth with
 
-`./geth --chain=custom --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1 console`
+`geth --chain=custom --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1 console`
 
 then in console you can execute `admin.nodeInfo`  command which prints node address
 
