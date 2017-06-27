@@ -1,0 +1,1 @@
+Download the chain from a file in order to speed up getting started with testing.
