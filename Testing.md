@@ -27,7 +27,152 @@ sudo apt-get install git cmake libcryptopp-dev libleveldb-dev libjsoncpp-dev lib
 sudo apt-get install libjsonrpccpp-dev -y
 ```
 
+We started ethminer with `ethminer -C -F 127.0.0.1:8546` and ours client with `sbt -Dconfig.file=/home/ubuntu/node.conf run`
+
+
+
 ## Testing
 Firstly we run nodes not connected to each other, this way nodes got their own versions of blockchain after chains were ~60 blocks long we connected them together and let them mine and resolve conflicting branches at the same time.
 
 We let them run for 3 days and after checking did not notice any error in logs, nodes are roughly on the same block and they are mining without any issue
+
+## etc-client configuration
+node.conf file should contains
+```
+etc-client {
+
+  client-id = "etc-client"
+
+  client-version = "etc-client/v0.1"
+
+  datadir = "/home/ubuntu/chain_data"
+
+  //File format of the keys (in plain text): publicKey ++ CR/LF ++ privateKey
+  keys-file = ${etc-client.datadir}"nodeId.keys"
+
+  keystore-dir = ${etc-client.datadir}"keystore"
+
+  // time the system will wait to shutdown the ActorSystem.
+  shutdown-timeout = "15.seconds"
+
+  network {
+
+    protocol-version = "1"
+
+    server-address {
+      interface = "public_ip"
+      port = 9076
+    }
+
+    discovery {
+      bootstrap-nodes = [
+        //list of nodes in network
+      ]
+
+      bootstrap-nodes-scan-interval = 2 minutes
+    }
+
+    peer {
+      connect-retry-delay = 20 seconds
+      connect-max-retries = 30
+      disconnect-poison-pill-timeout = 5 seconds
+      wait-for-hello-timeout = 3 seconds
+      wait-for-status-timeout = 30 seconds
+      wait-for-chain-check-timeout = 15 seconds
+
+      max-blocks-headers-per-message = 200
+      max-blocks-bodies-per-message = 200
+      max-receipts-per-message = 200
+      max-mpt-components-per-message = 400
+
+      max-peers = 200
+      network-id = 1
+    }
+
+    rpc {
+      enabled = true
+      interface = "127.0.0.1"
+      port = 8546
+      apis = "eth,web3,net"
+    }
+  }
+
+  mining {
+    tx-pool-size = 1000
+    ommers-pool-size = 30
+    block-cashe-size = 30
+    coinbase = "aa758c0b47afcafb9751a516e56a7c3332571933"
+    pooling-services-timeout = 5.seconds
+  }
+
+  blockchain {
+    frontier-block-number = "0"
+    homestead-block-number = "1150000"
+    eip150-block-number = "2500000"
+    eip160-block-number = "3000000"
+    difficulty-bomb-pause-block-number = "3000000"
+    difficulty-bomb-continue-block-number = "5000000"
+
+    // Doc: https://blog.ethereum.org/2016/07/20/hard-fork-completed/
+    dao-fork-block-number = "1920000"
+    dao-fork-block-total-difficulty = "39490964433395682584"
+    dao-fork-block-hash = "94365e3a8c0b35089c1d1195081fe7489b528a84b22199c916180db8b28ade7f"
+
+    chain-id = "3d"
+
+    custom-genesis-file = "/home/ubuntu/custom-genesis.json"
+
+    // YP eq 150
+    block-reward = "5000000000000000000"
+  }
+
+  fast-sync {
+    do-fast-sync = false
+    peers-scan-interval = 3.seconds
+    blacklist-duration = 30.seconds
+    start-retry-interval = 5.seconds
+    sync-retry-interval = 5.seconds
+    peer-response-timeout = 10.seconds
+    print-status-interval = 2.seconds
+    persist-state-snapshot-interval = 1.minute
+
+    max-concurrent-requests = 50
+    block-headers-per-request = 2048
+    block-bodies-per-request = 128
+    receipts-per-request = 60
+    nodes-per-request = 1000
+    min-peers-to-choose-target-block = 2
+    target-block-offset = 500
+
+    check-for-new-block-interval = 1.seconds
+    block-resolving-depth = 20
+  }
+
+  db {
+    iodb {
+      path = ${etc-client.datadir}"iodb/"
+    }
+    leveldb {
+      path = ${etc-client.datadir}"leveldb/"
+      create-if-missing = true
+      paranoid-checks = true // raise an error as soon as it detects an internal corruption
+      verify-checksums = true // force checksum verification of all data that is read from the file system on behalf of a particular read
+      cache-size = 0
+    }
+  }
+
+  filter {
+    filter-timeout = 10.minutes
+    filter-manager-query-timeout = 3.seconds
+    pending-transactions-manager-query-timeout = 5.seconds
+  }
+
+}
+
+akka {
+  loggers = ["akka.event.slf4j.Slf4jLogger"]
+  loglevel = "DEBUG"
+  logging-filter = "akka.event.slf4j.Slf4jLoggingFilter"
+  logger-startup-timeout = 30s
+}
+```
