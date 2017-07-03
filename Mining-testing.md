@@ -36,6 +36,8 @@ Firstly we run nodes not connected to each other, this way nodes got their own v
 
 We let them run for 3 days and after checking did not notice any error in logs, nodes are roughly on the same block and they are mining without any issue
 
+After that we connected geth classic node and it was able to join network and sync chain from genesis to current block (it was configured for same private network)
+
 ## etc-client configuration
 node.conf file should contains
 ```
@@ -174,5 +176,100 @@ akka {
   loglevel = "DEBUG"
   logging-filter = "akka.event.slf4j.Slf4jLoggingFilter"
   logger-startup-timeout = 30s
+}
+```
+
+## geth classic configuration
+chain.json
+```
+{
+    "id": "custom",
+    "name": "Morden Testnet",
+    "genesis": {
+        "nonce": "0x0000000000000042",
+        "timestamp": "0x00",
+        "parentHash": "",
+        "extraData": "0x00",
+        "gasLimit": "0x2fefd8",
+        "difficulty": "0x0400",
+        "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "coinbase": "0x0000000000000000000000000000000000000000",
+        "alloc": {
+            "d7a681378321f472adffb9fdded2712f677e0ba9": {"balance": "1606938044258990275541962092341162602522202993782792835301376"}
+        }
+    },
+    "chainConfig": {
+        "forks": [
+            {
+                "name": "Homestead",
+                "block": 494000,
+                "requiredHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "features": [
+                    {
+                        "id": "difficulty",
+                        "options": {
+                            "type": "homestead"
+                        }
+                    },
+                    {
+                        "id": "gastable",
+                        "options": {
+                            "type": "homestead"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "GasReprice",
+                "block": 1783000,
+                "requiredHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "features": [
+                    {
+                        "id": "gastable",
+                        "options": {
+                            "type": "eip150"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "The DAO Hard Fork",
+                "block": 1885000,
+                "requiredHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "features": []
+            },
+            {
+                "name": "Diehard",
+                "block": 1915000,
+                "requiredHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "features": [
+                    {
+                        "id": "eip155",
+                        "options": {
+                            "chainID": 62
+                        }
+                    },
+                    {
+                        "id": "gastable",
+                        "options": {
+                            "type": "eip160"
+                        }
+                    },
+                    {
+                        "id": "difficulty",
+                        "options": {
+                            "length": 2000000,
+                            "type": "ecip1010"
+                        }
+                    }
+                ]
+            }
+        ],
+        "badHashes": [
+        ]
+    },
+    "bootstrap": [
+        //nodes to connect
+    ]
 }
 ```
