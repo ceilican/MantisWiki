@@ -34,7 +34,9 @@ We started ethminer with `ethminer -C -F 127.0.0.1:8546` and ours client with `s
 ## Testing
 Firstly we run nodes not connected to each other, this way nodes got their own versions of blockchain after chains were ~60 blocks long we connected them together and let them mine and resolve conflicting branches at the same time.
 
-We let them run for 3 days and after checking did not notice any error in logs, nodes are roughly on the same block and they are mining without any issue
+We let them run for 3 days and after checking did not notice any error in logs, nodes are roughly on the same block and they are mining without any issue.
+
+We also checked that we produced blocks with correct ommer.
 
 After that we connected geth classic node and it was able to join network and sync chain from genesis to current block (it was configured for same private network)
 
