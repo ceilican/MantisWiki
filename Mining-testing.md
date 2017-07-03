@@ -38,7 +38,7 @@ We let them run for 3 days and after checking did not notice any error in logs, 
 
 We also checked that we produced blocks with correct ommer.
 
-After that we connected geth classic node and it was able to join network and sync chain from genesis to current block (it was configured for same private network)
+After that we connected geth classic node and it was able to join network and sync chain from genesis to current block (it was configured for same private network) and it continues ti accepting new blocks after sync was finished
 
 ## etc-client configuration
 node.conf file should contains
