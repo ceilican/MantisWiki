@@ -40,12 +40,14 @@ The following testing tools where used:
 **Feature**: Send tx for calling contract methods and watch contract events
 
 **Scenario**: With contract created, Mist interface was used for calling several of it’s methods, which were checked that they were getting confirmed. This methods involved events, so “Watch contract methods” was turned on to check that this events were properly detected.
+
 **Known methods involved**: Same as when sending txs.
  
  
 **Feature**: Call constant contract methods
 
 **Scenario**: With contract created, it was tested that the values shown for the constant functions were correct, which required calling contract methods that changed them.
+
 **Known methods involved**: eth_call.
  
 **Feature**: Create txs but starting miner only after the txs were created
@@ -53,6 +55,7 @@ The following testing tools where used:
 **Scenario**: Without the miner yet started, several transactions were created (including transactions from the same account), after which the miner was connected to our node and it was checked that the transactions were included in blocks and getting confirmed.
 
 **Known methods involved**: Same as when sending txs.
+
 **Note**: Creating several transactions from the same account without the miner connected is currently not working (pending task EC-223).
  
 **Feature**: Sync to peer (with only regular sync)
