@@ -40,6 +40,7 @@ We also checked that we produced blocks with correct ommer.
 
 After that we connected geth classic node and it was able to join network and sync chain from genesis to current block (it was configured for same private network) and it continues ti accepting new blocks after sync was finished
 
+### Issue with geth
 Also while testing we found out that if geth node is connected only to one node it will not sync if best blocks are too far away in terms of height
 ```
 eth/fetcher/fetcher.go:631] Peer 010d7622a3242a48: discarded block #16598 [3861d9e4…], distance 3043
