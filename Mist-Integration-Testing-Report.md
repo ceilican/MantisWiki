@@ -65,11 +65,9 @@ The following testing tools where used:
 
 **Feature**: Create txs but starting miner only after the txs were created
 
-**Scenario**: Without the miner yet started, several transactions were created (including transactions from the same account), after which the miner was connected to our node and it was checked that the transactions were included in blocks and getting confirmed.
+**Scenario**: Without the miner yet started, several transactions were created (testing specially including transactions from the same sender), after which the miner was connected to our node and it was checked that the transactions were included in blocks and getting confirmed.
 
 **Known methods involved**: Same as when sending txs.
-
-**Note**: Creating several transactions from the same account without the miner connected is currently not working (pending task EC-223).
  
 ***
 
