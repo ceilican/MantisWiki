@@ -13,3 +13,7 @@ Created second small instance with following extra override (12.35)
 ```
 discovery = false
 ```
+
+Both stopped for (no discovery for 1 hour) at 3:43 WEd Jul 26 
+
+Override `peer-response-timeout` to 3 minutes
