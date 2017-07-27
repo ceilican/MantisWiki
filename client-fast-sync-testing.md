@@ -11,3 +11,4 @@
 * 13:37 CEST restart to get better peers, updated `connect-max-retries` 1 -> 5
 * 15:03 CEST restart with configuration changes from https://github.com/input-output-hk/etc-client/pull/261/commits/363742a9d358a2c631af61bc40d428258116c1f8 (Block: 1518416/4163902)
 * 16:39 CEST restart with update `nodes-per-request` 500 -> 200 (Block: 1547472/4163902)
+* 17:04 CEST restart with update block-headers-per-request 2048 -> 200 (Block: 1555600/4163902)
