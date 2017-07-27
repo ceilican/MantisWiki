@@ -7,3 +7,4 @@
 * 12:25 CEST restart with removed trace from message decoder error (Block: 1491216/4163902)
 * 12:29 CEST restart with pruning set to `archive` because fast sync was started without pruning
 * 12:51 CEST restart update update `nodes-per-request` 1000 -> 500 (Block: 1507984/4163902)
+* 13:35 CEST peers are responding with `11:35:07.329 i.i.e.b.s.SyncBlockHeadersRequestHandler - Received 0 block headers in 1556 ms` (Block: 1512464/4163902)
