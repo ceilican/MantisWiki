@@ -9,3 +9,4 @@
 * 12:51 CEST restart update update `nodes-per-request` 1000 -> 500 (Block: 1507984/4163902)
 * 13:35 CEST peers are responding with `11:35:07.329 i.i.e.b.s.SyncBlockHeadersRequestHandler - Received 0 block headers in 1556 ms` (Block: 1512464/4163902)
 * 13:37 CEST restart to get better peers, updated `connect-max-retries` 1 -> 5
+* 15:03 CEST restart with configuration changes from https://github.com/input-output-hk/etc-client/pull/261/commits/363742a9d358a2c631af61bc40d428258116c1f8
