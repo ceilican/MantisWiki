@@ -5,3 +5,4 @@
 * 11:32 CEST restart with new configuration lowering the blacklist duration (Block: 1434256/4163902)
 * 12:16 CEST restart with latest version of application (Block: 1488656/4163902)
 * 12:25 CEST restart with removed trace from message decoder error (Block: 1491216/4163902)
+* 12:29 CEST restart with pruning set to `archive` because fast sync was started without pruning
