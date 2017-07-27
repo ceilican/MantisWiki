@@ -12,7 +12,26 @@ OS: Fedora 26, kernel 4.11
 openjdk version "1.8.0_131"
 
 # Config changes
-Only `grothendieck.datadir`
+```
+
+# Maximum block headers in a single response message (as a blockchain host)
+max-blocks-headers-per-message = 100
+
+# Maximum block bodies in a single response message (as a blockchain host)
+max-blocks-bodies-per-message = 100
+
+# Maximum transactions receipts in a single response message (as a blockchain host)
+max-receipts-per-message = 100
+
+# Maximum MPT components in a single response message (as a blockchain host)
+max-mpt-components-per-message = 200
+
+
+
+# Response time-out from peer during sync. If a peer fails to respond within this limit, it will be blacklisted
+peer-response-timeout = 30.seconds
+
+```
 
 # Version
 ```
