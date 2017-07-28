@@ -17,3 +17,4 @@
 * 13:51 CEST Block: 776848/4175269 State: 3228429/3234860 nodes
 * 16:37 CEST restart with https://github.com/input-output-hk/etc-client/pull/264 branch (prioritize nodes download because they can be pruned) Block: 1005144/4175269 State: 3238067/3246877 nodes
 * 17:03 CEST Block: 1042776/4175269 State: 4665247/4671393 nodes
+* 17:14 CEST we got stuck on timeouts on all fast sync elements but timeouts stopped at 17:29 CEST we suspect that network was under load
