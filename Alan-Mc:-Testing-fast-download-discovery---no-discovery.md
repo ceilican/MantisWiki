@@ -11,7 +11,4 @@ fast-sync = false
 discovery = false
 ```
 
-Created second small instance with following extra override (12.35)
-```
-discovery = true
-```
+14:56:20 Block: 551048. Peers: 6 (0 blacklisted)
