@@ -16,3 +16,4 @@
 * 11:05 CEST restart from empty data dir because blacklisting all peers with message `got empty mpt node response for known hashes`, target MPT was probably already pruned from peers
 * 13:51 CEST Block: 776848/4175269 State: 3228429/3234860 nodes
 * 16:37 CEST restart with https://github.com/input-output-hk/etc-client/pull/264 branch Block: 1005144/4175269 State: 3238067/3246877 nodes
+* 17:03 CEST Block: 1042776/4175269 State: 4665247/4671393 nodes
