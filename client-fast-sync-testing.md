@@ -12,3 +12,4 @@
 * 15:03 CEST restart with configuration changes from https://github.com/input-output-hk/etc-client/pull/261/commits/363742a9d358a2c631af61bc40d428258116c1f8 (Block: 1518416/4163902)
 * 16:39 CEST restart with update `nodes-per-request` 500 -> 200 (Block: 1547472/4163902)
 * 17:04 CEST restart with update block-headers-per-request 2048 -> 200 (Block: 1555600/4163902)
+* 10:55 CEST 28th of July restart with changes from https://github.com/input-output-hk/etc-client/pull/261/commits/b0761e8fa8e50df25e276d67b53b7ea2f16e7474 (Block: 1736792/4163902)
