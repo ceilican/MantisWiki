@@ -13,3 +13,4 @@
 * 16:39 CEST restart with update `nodes-per-request` 500 -> 200 (Block: 1547472/4163902)
 * 17:04 CEST restart with update block-headers-per-request 2048 -> 200 (Block: 1555600/4163902)
 * 10:55 CEST 28th of July restart with changes from https://github.com/input-output-hk/etc-client/pull/261/commits/b0761e8fa8e50df25e276d67b53b7ea2f16e7474 (Block: 1736792/4163902)
+* 11:05 CEST restart from empty data dir because blacklisting all peers with message `got empty mpt node response for known hashes`, target MPT was probably already pruned from peers
