@@ -19,4 +19,4 @@
 * 17:03 CEST Block: 1042776/4175269 State: 4665247/4671393 nodes
 * 17:14 CEST we got stuck on timeouts on all fast sync elements but timeouts stopped at 17:29 CEST we suspect that network was under load
 * 17:33 CEST Block: 1056216/4175269 State: 4902847/4906683 nodes
-* 17:46 CEST 1074456/4175269 State: 5170859/5174391 nodes
+* 17:46 CEST Block: 1074456/4175269 State: 5170859/5174391 nodes
