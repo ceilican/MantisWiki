@@ -1,3 +1,13 @@
+## Prerequisites
+
+A Java Virtual Machine with version greater than 1.8.
+  So for example on an EC2 small instance 
+
+java version "1.8.0_131"
+Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
+
+
 A bootstrap database has been created to support the client.
  
 This file is available for download from S3. 
