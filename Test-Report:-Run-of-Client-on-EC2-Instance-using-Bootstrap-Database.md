@@ -38,3 +38,7 @@ Sync began at 11.27 UTC on Block 4170219 (picked up from bootstrap database)
 ```
 13:07:08 Block: 4180883. Peers: 7 (0 blacklisted)
 ```
+
+```
+14:18:43 Block: 4187651. Peers: 7 (1 blacklisted)
+```
