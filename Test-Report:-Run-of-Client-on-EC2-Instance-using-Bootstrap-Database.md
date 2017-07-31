@@ -42,3 +42,13 @@ Sync began at 11.27 UTC on Block 4170219 (picked up from bootstrap database)
 ```
 14:18:43 Block: 4187651. Peers: 7 (1 blacklisted)
 ```
+Client begins processing blocks in 'real time'...
+```
+15:21:42 Block: 4195387. Peers: 9 (0 blacklisted)
+15:21:42 Received 80 block headers in 95 ms
+15:21:44 Received 80 block bodies in 2138 ms
+15:22:25 Block: 4195467. Peers: 9 (0 blacklisted)
+15:22:25 Received 1 block headers in 59 ms
+15:22:25 Received 1 block bodies in 15 ms
+15:22:25 Received 0 block headers in 14 ms
+```
