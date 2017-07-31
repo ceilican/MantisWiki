@@ -1,13 +1,23 @@
 ## Prerequisites
 
-A Java Virtual Machine with version greater than 1.8.
-  So for example on an EC2 small instance 
+### A Java Virtual Machine with version 1.8.x.
 
+So for example on an EC2 small instance 
+```
 java version "1.8.0_131"
 Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
+```
+### Disk Space 
+The database for the Ethereum Classic chain take approximately 15G of disk space. 
+Appropriate overhead will be needed for the chain to grow into the future. 
+An SSD of at least 25G is recommended.  
 
+### Memory (RAM) 
+The client has been tested extensively on EC small instances with 2G of RAM. 
+This is sufficient to run the client and the miner (however it is not sufficient to *build* the miner)
 
+### The Bootstrap Database
 A bootstrap database has been created to support the client.
  
 This file is available for download from S3. 
