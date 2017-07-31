@@ -21,3 +21,4 @@
 * 17:33 CEST Block: 1056216/4175269 State: 4902847/4906683 nodes
 * 17:46 CEST Block: 1074456/4175269 State: 5170859/5174391 nodes
 * 11:13 CEST 31st of July Block: 3245472/4175269 State: 21775445/21775445 nodes syncing from 1 peer
+* 14:20 CEST 31st of July started second EC2 instance with fast sync with disabled discovery
