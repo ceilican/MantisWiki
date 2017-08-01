@@ -16,7 +16,7 @@
 
 
 
-
+-----------------------------------------------------------------------------------------------
 
 * 11:05 CEST restart from empty data dir because blacklisting all peers with message `got empty mpt node response for known hashes`, target MPT was probably already pruned from peers
 * 13:51 CEST Block: 776848/4175269 State: 3228429/3234860 nodes
