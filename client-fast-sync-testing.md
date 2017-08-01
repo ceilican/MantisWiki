@@ -25,3 +25,5 @@
 * 18:06 CEST second EC2 Block: 430008/4194826. State: 4216017/4223787 nodes.
 * 19:53 CEST second EC2 Block: 432632/4194826. State: 4246017/4253101 nodes. 
 * 19:59 CEST first EC2 Block: 3628064/4175269. State: 21775445/21775445 nodes. Stack with 0 peers: Peers waiting_for_response/connected: 0/0 (0 blacklisted)
+* 09:54 CEST first EC2 restart it was not able to connect to any new peer
+* 09:54 CEST second EC2 (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
