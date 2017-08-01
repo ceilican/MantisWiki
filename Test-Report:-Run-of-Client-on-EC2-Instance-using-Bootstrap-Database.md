@@ -52,3 +52,8 @@ Client begins processing blocks in 'real time'...
 15:22:25 Received 1 block bodies in 15 ms
 15:22:25 Received 0 block headers in 14 ms
 ```
+Test continues to stay up to date overnight ...
+```
+09:44:38 Block: 4200127. Peers: 3 (0 blacklisted)
+```
+Test stopped!
