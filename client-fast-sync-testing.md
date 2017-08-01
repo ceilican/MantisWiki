@@ -1,4 +1,4 @@
-* I started fast sync on EC2 on 14:10 CEST 26th of July with target block 4163902
+* I started fast sync on EC2 on 14:10 CEST 26th of July with target block `4163902`
 * On 16:05 it is on 733184 block, no dead loop, no stuck
 * Around block 1389840 10:00 CEST 27th of July we blacklisted all peers and we are receiving lot of transactions not targeted at etereum classic chain
 * 10:05 CEST we unbloacklisted 1 peer and we are syncing again (Block: 1392592/4163902)
@@ -18,7 +18,7 @@
 
 -----------------------------------------------------------------------------------------------
 
-* 11:05 CEST restart from empty data dir because blacklisting all peers with message `got empty mpt node response for known hashes`, target MPT was probably already pruned from peers, target block is 4175269
+* 11:05 CEST restart from empty data dir because blacklisting all peers with message `got empty mpt node response for known hashes`, target MPT was probably already pruned from peers, target block is `4175269`
 * 13:51 CEST Block: 776848/4175269 State: 3228429/3234860 nodes
 * 16:37 CEST restart with https://github.com/input-output-hk/etc-client/pull/264 branch (prioritize nodes download because they can be pruned) Block: 1005144/4175269 State: 3238067/3246877 nodes
 * 17:03 CEST Block: 1042776/4175269 State: 4665247/4671393 nodes
@@ -32,7 +32,7 @@
 
 --------------------------------------------------------------------------------------------------------
 
-* 14:20 CEST 31st of July started second EC2 instance with fast sync with disabled discovery, target block is 4194826
+* 14:20 CEST 31st of July started second EC2 instance with fast sync with disabled discovery, target block is `4194826`
 * 18:06 CEST EC2 Block: 430008/4194826. State: 4216017/4223787 nodes.
 * 19:53 CEST EC2 Block: 432632/4194826. State: 4246017/4253101 nodes. 
 * 09:54 CEST EC2 (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
