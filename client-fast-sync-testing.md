@@ -26,11 +26,14 @@
 * 17:33 CEST Block: 1056216/4175269 State: 4902847/4906683 nodes
 * 17:46 CEST Block: 1074456/4175269 State: 5170859/5174391 nodes
 * 11:13 CEST 31st of July Block: 3245472/4175269 State: 21775445/21775445 nodes syncing from 1 peer
+* 19:59 CEST EC2 Block: 3628064/4175269. State: 21775445/21775445 nodes. Stack with 0 peers: Peers waiting_for_response/connected: 0/0 (0 blacklisted)
+* 09:54 CEST EC2 restart it was not able to connect to any new peer
+* 15:43 CEST EC2 finished fast sync and switched to regular sync it is now on 4176799th block
+
+--------------------------------------------------------------------------------------------------------
+
 * 14:20 CEST 31st of July started second EC2 instance with fast sync with disabled discovery, target block is 4194826
-* 18:06 CEST second EC2 Block: 430008/4194826. State: 4216017/4223787 nodes.
-* 19:53 CEST second EC2 Block: 432632/4194826. State: 4246017/4253101 nodes. 
-* 19:59 CEST first EC2 Block: 3628064/4175269. State: 21775445/21775445 nodes. Stack with 0 peers: Peers waiting_for_response/connected: 0/0 (0 blacklisted)
-* 09:54 CEST first EC2 restart it was not able to connect to any new peer
-* 09:54 CEST second EC2 (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
-* 15:43 CEST first EC2 finished fast sync and switched to regular sync it is now on 4176799th block
-* 15:58 CEST second EC2 Block: 736696/4194826. State: 14047204/14057012 nodes. Connected to 6 peers
+* 18:06 CEST EC2 Block: 430008/4194826. State: 4216017/4223787 nodes.
+* 19:53 CEST EC2 Block: 432632/4194826. State: 4246017/4253101 nodes. 
+* 09:54 CEST EC2 (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
+* 15:58 CEST EC2 Block: 736696/4194826. State: 14047204/14057012 nodes. Connected to 6 peers
