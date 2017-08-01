@@ -28,3 +28,4 @@
 * 09:54 CEST first EC2 restart it was not able to connect to any new peer
 * 09:54 CEST second EC2 (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
 * 15:43 CEST first EC2 finished fast sync and switched to regular sync it is now on 4176799th block
+* 15:58 CEST second EC2 Block: 736696/4194826. State: 14047204/14057012 nodes. Connected to 6 peers
