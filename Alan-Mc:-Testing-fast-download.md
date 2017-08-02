@@ -32,6 +32,13 @@ Started - Wed Aug  2 11:19:30 UTC 2017
 
 Windows 10 Home Edition (Version 1607)
 
+### Editing Config Files on Windows
+The config file are created for Linux, in order to make the files readable on windows use
+```
+type misc.conf | more /P > out.conf
+```
+And then rename the `out.conf` to the original file name. Apologies, this will be remedied in later versions.
+
 Intel i7 4GHz CPU
 
 32G RAM
