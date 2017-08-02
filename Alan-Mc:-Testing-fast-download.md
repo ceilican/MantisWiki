@@ -22,3 +22,6 @@ Started - Wed Aug  2 11:19:30 UTC 2017
 ```
 11:56:13 Block: 274360/4206059. Peers waiting_for_response/connected: 7/7 (0 blacklisted). State: 2372650/2379673 nodes
 ```
+```
+13:10:13 Block: 713144/4206059. Peers waiting_for_response/connected: 6/6 (1 blacklisted). State: 6881071/6896739 nodes
+```
