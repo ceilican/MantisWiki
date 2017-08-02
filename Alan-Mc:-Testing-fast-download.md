@@ -25,7 +25,9 @@ Started - Wed Aug  2 11:19:30 UTC 2017
 ```
 13:10:13 Block: 713144/4206059. Peers waiting_for_response/connected: 6/6 (1 blacklisted). State: 6881071/6896739 nodes
 ```
-
+```
+16:14:43 Block: 769912/4206059. Peers waiting_for_response/connected: 5/5 (0 blacklisted). State: 19482675/19490954 nodes
+```
 # RUN 3
 
 Windows 10 Home Edition (Version 1607)
