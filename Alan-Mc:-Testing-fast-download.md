@@ -25,3 +25,17 @@ Started - Wed Aug  2 11:19:30 UTC 2017
 ```
 13:10:13 Block: 713144/4206059. Peers waiting_for_response/connected: 6/6 (1 blacklisted). State: 6881071/6896739 nodes
 ```
+
+# RUN 3
+
+Windows 10 Home Edition (Version 1607)
+
+Intel i7 4GHz CPU
+
+32G RAM
+Standard large disk (!?)
+
+First, JRE needed to be installed used latest release v 1.8 147
+Then windows does not support paths in `application.ini` or `NativePRNG` had to fix that. 
+
+Run began successfully at 14.50 pm Wednesday 2nd August.
