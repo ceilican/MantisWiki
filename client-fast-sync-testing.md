@@ -35,5 +35,6 @@
 * 14:20 CEST 31st of July started second EC2 instance with fast sync with disabled discovery, target block is `4194826`
 * 18:06 CEST EC2 Block: 430008/4194826. State: 4216017/4223787 nodes.
 * 19:53 CEST EC2 Block: 432632/4194826. State: 4246017/4253101 nodes. 
-* 09:54 CEST EC2 (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
+* 09:54 CEST EC2 1st of August (without discovery) Block: 731896/4194826. State: 12391323/12406325 nodes, connected to 6 peers
 * 15:58 CEST EC2 Block: 736696/4194826. State: 14047204/14057012 nodes. Connected to 6 peers
+* 10:15 CEST EC2 Block: 841464/4194826. State: 18938830/18951608 nodes. Connected to 6 peers
