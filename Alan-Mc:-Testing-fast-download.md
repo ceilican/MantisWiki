@@ -28,6 +28,10 @@ Started - Wed Aug  2 11:19:30 UTC 2017
 ```
 16:14:43 Block: 769912/4206059. Peers waiting_for_response/connected: 5/5 (0 blacklisted). State: 19482675/19490954 nodes
 ```
+State trie downloaded .... .9 of 4.2 million blocks to go...
+```
+17:26:13 Block: 916504/4206059. Peers waiting_for_response/connected: 4/4 (0 blacklisted). State: 21785288/21785288 nodes
+```
 # RUN 3
 
 Windows 10 Home Edition (Version 1607)
