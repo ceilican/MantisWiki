@@ -40,6 +40,9 @@ Thursday morning .... only one peer, restart.
 ```
 07:49:13 Block: 1969280/4206059. Peers waiting_for_response/connected: 8/9 (1 blacklisted). State: 21785288/21785288 nodes.
 ```
+```
+12:10:43 Block: 2931440/4206059. Peers waiting_for_response/connected: 1/7 (0 blacklisted). State: 21785288/21785288 nodes.
+```
 # RUN 3
 
 Windows 10 Home Edition (Version 1607)
