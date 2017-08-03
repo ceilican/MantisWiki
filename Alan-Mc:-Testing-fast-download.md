@@ -11,6 +11,9 @@ Run from dist created from branch "beta1" (plus outstanding PRs) on Tuesday Aug 
 ```
 11:22:04 Block: 1020600/4200094. Peers waiting_for_response/connected: 3/7 (0 blacklisted). State: 20619238/20621259 nodes.
 ```
+```
+21:26:34 Block: 1645368/4200094. Peers waiting_for_response/connected: 0/6 (0 blacklisted). State: 21782414/21782414 nodes
+```
 # RUN 2
 
 EC2 Large Instance (network moderate)
