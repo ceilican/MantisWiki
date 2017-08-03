@@ -39,3 +39,4 @@
 * 15:58 CEST Block: 736696/4194826. State: 14047204/14057012 nodes. Connected to 6 peers
 * 10:15 CEST 2nd of August Block: 841464/4194826. State: 18938830/18951608 nodes. Connected to 6 peers
 * 14:16 CEST Block: 841464/4194826. State: 20012279/20019682 nodes. Connected to 6 peers
+* 11:48 CEST 3rd of August Block: 1790520/4194826. State: 21781789/21781789 nodes. Connected to 6 peers
