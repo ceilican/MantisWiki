@@ -32,6 +32,14 @@ State trie downloaded .... .9 of 4.2 million blocks to go...
 ```
 17:26:13 Block: 916504/4206059. Peers waiting_for_response/connected: 4/4 (0 blacklisted). State: 21785288/21785288 nodes
 ```
+Thursday morning .... only one peer, restart.
+```
+07:43:13 Block: 1964520/4206059. Peers waiting_for_response/connected: 1/1 (0 blacklisted). State: 21785288/21785288 nodes
+```
+9 Peers after restart...
+```
+07:49:13 Block: 1969280/4206059. Peers waiting_for_response/connected: 8/9 (1 blacklisted). State: 21785288/21785288 nodes.
+```
 # RUN 3
 
 Windows 10 Home Edition (Version 1607)
