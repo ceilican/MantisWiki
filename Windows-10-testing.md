@@ -32,6 +32,7 @@ Synced for ~4.5-5.5 hours without any problems, last status:
 ```
 12:20:48 Block: 943824/4213768. Peers waiting_for_response/connected: 3/3 (0 blacklisted). State: 13162393/13164658 nodes.
 ```
+Size of the database: 4.17GB.
 
 ### Private chain with mining
 
@@ -39,9 +40,9 @@ Synced for ~4.5-5.5 hours without any problems, last status:
 
 * Miner: Genoil's Ethereum AMD+NVIDIA GPU Miner v1.1.7 (Windows) - Used via OpenCL.
 * Mantis client:
-   * Setup private chain on Mantis client.
+   * Setup private chain on Mantis client, with only the Mantis client.
    * Imported account for use as coinbase.
 
 #### Result
 
-Several blocks were mined, which were included in the blockchain and were reported in Mist.
+Several blocks were mined (with and without transactions), which were included in the blockchain and were reported in Mist.
