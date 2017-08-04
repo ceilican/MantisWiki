@@ -1,4 +1,4 @@
-## Testing environment (Small EC2 instance)
+## Testing environment
 ```
 Hardware: Lenovo ideapad 310
 
@@ -28,9 +28,9 @@ Date:   Thu Aug 3 17:32:03 2017 -0300
 
 ### Syncing (Fast Sync)
 
-Synced for ~4-5 hours without any problems, last status:
+Synced for ~4.5-5.5 hours without any problems, last status:
 ```
-11:54:19 Block: 924240/4213768. Peers waiting_for_response/connected: 3/3 (0 blacklisted). State: 12890960/12897149 nodes.
+12:20:48 Block: 943824/4213768. Peers waiting_for_response/connected: 3/3 (0 blacklisted). State: 13162393/13164658 nodes.
 ```
 
 ### Private chain with mining
