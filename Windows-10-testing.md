@@ -28,9 +28,9 @@ Date:   Thu Aug 3 17:32:03 2017 -0300
 
 ### Syncing (Fast Sync)
 
-Synced for ~4.5-5.5 hours without any problems, last status:
+Synced for ~6.5-7.5 hours without any problems, last status:
 ```
-12:20:48 Block: 943824/4213768. Peers waiting_for_response/connected: 3/3 (0 blacklisted). State: 13162393/13164658 nodes.
+14:19:54 Block: 1110864/4213768. Peers waiting_for_response/connected: 5/5 (0 blacklisted). State: 16449632/16462199 nodes.
 ```
 Size of the database: 4.17GB.
 
