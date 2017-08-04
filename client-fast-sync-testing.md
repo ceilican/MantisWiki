@@ -44,3 +44,4 @@
 * 12:21 CEST Block: 1797728/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/5 (0 blacklisted). no more blacklisting
 * 07:07 CEST 4th of August Block: 2773696/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted). 
 * 13:34 CEST Block: 2776216/4194826 State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted).
+* 16:35 CEST Block: 3004252/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted).
