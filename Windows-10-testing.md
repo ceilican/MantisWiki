@@ -32,7 +32,7 @@ Synced for ~7-8 hours without any problems, last status:
 ```
 15:07:54 Block: 1194192/4213768. Peers waiting_for_response/connected: 6/5 (0 blacklisted). State: 16621537/16634161 nodes.
 ```
-Size of the database: 4.17GB.
+Size of the database: 5.10GB.
 
 ### Private chain with mining
 
