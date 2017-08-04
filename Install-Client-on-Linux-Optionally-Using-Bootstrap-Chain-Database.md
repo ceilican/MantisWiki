@@ -28,7 +28,7 @@ A bootstrap database has been created to support the client.
  
 This file is available for download from S3. 
 
-[Bootstrap zip](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/mantis-cli-beta1-bootstrap-db.zip)
+[mantis-cli-beta1-bootstrap-db.zip](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/mantis-cli-beta1-bootstrap-db.zip)
 
 Or from a command line use ... 
 
