@@ -52,6 +52,8 @@ Node fully up to date and processing transactions normally...
 ```
 21:20:43 Block: 4215200. Peers: 3 (0 blacklisted)
 ```
+Node continues to perform as expected on Friday morning 9am, test concluded...
+
 # RUN 3
 
 Windows 10 Home Edition (Version 1607)
