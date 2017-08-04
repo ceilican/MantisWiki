@@ -16,7 +16,7 @@ Appropriate overhead will be needed for the chain to grow into the future.
 An SSD of at least 25G is recommended.  
 
 ### Memory (RAM) 
-The client has been tested extensively on EC small instances with 2G of RAM. 
+The mantis client has been tested extensively on EC small instances with 2G of RAM. 
 This is sufficient to run the client and the miner (however it is not sufficient to *build* the miner)
 
 ## Downloads
@@ -28,34 +28,34 @@ A bootstrap database has been created to support the client.
  
 This file is available for download from S3. 
 
-[Bootstrap zip](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/grothendieck-bootstrap-jul27-db.zip)
+[Bootstrap zip](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/mantis-cli-beta1-bootstrap-db.zip)
 
 Or from a command line use ... 
 
-```wget https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/grothendieck-bootstrap-jul27-db.zip```
+```wget https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/mantis-cli-beta1-bootstrap-db.zip```
 
 ### Checksum the Bootstrap Database Archive 
 
 When the file is fully downloaded (on linux) run the following command 
 
-```md5sum grothendieck-bootstrap-jul27-db.zip```
+```md5sum mantis-cli-beta1-bootstrap-db.zip```
 
 This should result in a line identical to the following ...
 
-```cfe28f39d0ce1e46c7cd1f7adc0ab998  grothendieck-bootstrap-jul27-db.zip```
+```3a7bceeb1816de2e481d6a280c73e4e1  mantis-cli-beta1-bootstrap-db.zip```
 
 Compare the results of the line on your terminal to the above line, the checksum should be identical.
 
-The default folder for data is `~/.grothendieck`. In order to use the downloaded database create this folder and `cd` into it. Then unzip the file using...
+The default folder for data is `~/.mantis`. In order to use the downloaded database create this folder and `cd` into it. Then unzip the file using...
 
-`unzip <path to zip file>/grothendieck-bootstrap-jul27-db.zip`
+`unzip <path to zip file>/mantis-cli-beta1-bootstrap-db.zip`
 
 ## Install the Client
 
 unzip the client archive file downloaded from the previous section. This will create a folder structure as follows -
 
 ``` 
-etc-client0.1
+mantis-0.3-cli-beta
 │   
 └───bin
 │   
@@ -67,9 +67,9 @@ The `lib` folder contains all the jars required to run the client, the `conf` fo
 
 ### Run the Client
 
-From the `etc-client-0.1` folder use 
+From the `mantis-0.3-cli-beta` folder use 
 
-`./bin/etc-client`
+`./bin/mantis`
 
 This command will run the client in the foreground with settings as dictated in the `conf` folder files. 
 
@@ -80,10 +80,10 @@ Following the instructions outlined above including using the bootstrap database
 ![](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/Start_with_bootstrap.png)
 
 The first block should be around 4.1 million as this is where the snapshot was taken. If you have not used the snapshot 
-The default datadir is `~/.grothendieck`. To change this edit the `storage.conf` file in the `conf` folder.
+The default datadir is `~/.mantis`. To change this edit the `storage.conf` file in the `conf` folder.
 
 ![](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/default_data_dir.png)
 
 Un-comment the `datadir` configuration and replace the value with the preferred value.
 
-```datadir = ${user.home}"/.grothendieck" ```
+```datadir = ${user.home}"/.mantis" ```
