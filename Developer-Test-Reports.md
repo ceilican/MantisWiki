@@ -18,3 +18,4 @@ This page provides links to some of the test reports produced by the developers 
 
 ### Private Networks and Mining
  - [Private Network](Private-Network-Mining-Tests)
+ - [Private Network with Geth](Private-Network-Geth-Tests)
