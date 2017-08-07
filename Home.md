@@ -7,7 +7,7 @@ This wiki contains a collection of `How To's` and a record of the test runs that
 - [How to install mantis on Linux](Install-Client-on-Linux-Optionally-Using-Bootstrap-Chain-Database)
 - [How to install mantis on Windows 10](Install-Mantis-on-Windows-10-Optionally-Using-Bootstrap-Database)
 - [How to use the bootstrap database for Ethereum Classic and Morden](Bootstrap-Database-Download-Links)
-- [How to set up a private network using mantis and parity clients](Example-configuration-for-private-network)
+- [How to set up a private network using mantis and parity clients](Example-Configuration-for-Private-Network-Using-Parity)
 - [How to set up a private network using mantis and geth clients](Create-a-Private-Network-Using-geth-and-mantis-Clients)
 - [How to configure the mantis client](general_configuration)
 - [How to configure the mist browser to connect to the mantis client]()
