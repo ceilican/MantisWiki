@@ -5,7 +5,7 @@ For more information on Ethereum Classic see the [Ethereum Classic website](http
 This wiki contains a collection of `How To's` and a record of the test runs that have been done over the recent  Beta testing period.  
 
 - [How to install mantis on Linux](Install-Client-on-Linux-Optionally-Using-Bootstrap-Chain-Database)
-- [How to install mantis in Windows 10]()
+- [How to install mantis on Windows 10](Install-Client-on-Windows10)
 - [How to use the Bootstrap database for Ethereum Classic and Morden](Bootstrap-Database-Download-Links)
 - [How to configure the mantis client]()
 
