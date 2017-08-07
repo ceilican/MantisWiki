@@ -46,3 +46,4 @@
 * 13:34 CEST Block: 2776216/4194826 State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted).
 * 16:35 CEST Block: 3004252/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted).
 * 10:45 CEST 7th of August Block: 3004252/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 1/6 (0 blacklisted). Asking for block headers but getting empty responses from peer `Received 0 block headers in 268 ms`, restarted, now it is syncing again
+* 16:46 CEST Block: 3004252/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted). 
