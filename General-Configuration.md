@@ -1,6 +1,6 @@
-The Mantis client is highly flexible at runtime through its configuration files. 
+The mantis client is highly flexible and it's behavior at runtime can be controlled through its configuration files. 
 
-All files live in the `conf` folder under the application root folder.
+All mantis configuration files live in the `conf` folder under the application root folder.
 
 ```
 application.ini
@@ -52,3 +52,43 @@ include "misc.conf"
 
 ### logback.xml
 This file controls the level of logging to both the console and file. By default a useful level of logging is directed to the console and slightly more verbose logging is logged to file. The file is named `mantis.log`. The policy for preventing the file from growing too large is controlled by `rollingPolicy` in this file. By default an archive of ten zip files of logs is maintained. More info on logback.xml [here](https://logback.qos.ch/manual/configuration.html)
+
+### Common Configuration Options
+This section details how to change some of the more common configuration options.
+
+#### Data Folder
+By default the blockchain and all other files that mantis creates are stored in the users home folder under a sub folder called `.mantis`. This setting is found in the `storage.conf` file.
+
+`# datadir = ${user.home}"/.mantis"`
+
+In order to change this setting un comment this line and replace the value. For example to change the datadir to `/data/my_mantis` replace the above line with the following ...
+
+`datadir = "/data/my_mantis"`
+
+#### Discovery
+By default the discovery functionality is active. The network is queried for more potential nodes using a partial implementation of the kadelmia discovery protocol. To prevent this and use *only* the bootstrap nodes as listed in the `network.conf` there is a line. 
+
+`# discovery-enabled = true`
+
+This commented out line shows the default value for the discovery protocol (true). To disable `discovery` un comment it and change the value to `false`.
+
+`discovery-enabled = false`
+
+#### Fast Sync
+By default fast sync is enabled, to disable this edit the `sync.conf` and locate the following line 
+
+`# do-fast-sync = true`
+
+Un comment the line and replace 'true' with 'false'
+
+`do-fast-sync = false`
+
+#### Pruning
+By default the database is pruned of state trie nodes no longer needed, to prevent this functionality and keep all intermediate state nodes edit the `storage.conf` file and replace 
+
+`# mode = "basic"`
+
+with 
+
+`mode = "archive"`
+
