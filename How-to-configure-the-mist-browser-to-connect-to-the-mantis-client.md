@@ -6,7 +6,7 @@ Latest version of Mist wallet should be downloaded from [here](https://github.co
 
 ### Run Mantis
 
-Follow [this instructions](index) in order to setup and run the mantis client. 
+Follow [this instructions](Home) in order to setup and run the mantis client. 
 
 ## Connecting Mist Browser to Mantis
 
