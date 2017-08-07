@@ -1,5 +1,7 @@
-To run mantis with private network you have to
+To run mantis with private network you have to start with:
+
 `mantis -Dconfig.file=path_to_configuration_file.conf`
+
 You have to update configuration_file.conf to set correct bootstrap node addresses and patch to custom genesis file (with parity conf you also have to update bootstrap nodes)
 
 Example application configuration file for mantis is (configuration_file.conf)
