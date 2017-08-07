@@ -1,4 +1,4 @@
-[How To's](wiki)
+[How To's]()
 
 [Releases](https://github.com/input-output-hk/etc-client/releases)
 
