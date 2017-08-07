@@ -115,7 +115,7 @@ for parity you can use this custom chain file (`parity_prv.json`):
     "ommersHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347"
   },
   "nodes": [
-    "enode://c2328c3e7857106585dbb59b712ac2ab9443d4f0b55b77451fbf33c0dda58b882f0683c4c9222cbf8d1d6893e7f926d487630810202a2c75ec6dd996dbe84715@192.168.0.12:30303"
+   //put here addresses of other nodes in network "enode://c2328c3e7857106585dbb59b712ac2ab9443d4f0b55b77451fbf33c0dda58b882f0683c4c9222cbf8d1d6893e7f926d487630810202a2c75ec6dd996dbe84715@192.168.0.12:30303"
   ],
   "accounts": {
     "d7a681378321f472adffb9fdded2712f677e0ba9": {
