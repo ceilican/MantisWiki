@@ -1,8 +1,8 @@
-To run mantis with private network you have to start with:
+To run mantis in private network with parity you have to start with:
 
 `mantis -Dconfig.file=path_to_configuration_file.conf`
 
-You have to update configuration_file.conf to set correct bootstrap node addresses and patch to custom genesis file (with parity conf you also have to update bootstrap nodes)
+You have to update configuration_file.conf to set correct bootstrap node addresses and patch to custom genesis file (in the parity configuration you also have to update bootstrap nodes)
 
 To run multiple nodes on single machine you have to set unique ports for each nodes as well as unique `datadir`
 
@@ -67,8 +67,8 @@ Example genesis configuration for mantis is (`prv.json`)
 }
 ```
 
-to start mining you need external miner, for example `ethminer`
-to start mining with ethminer run (`-C` is for cpu only mining) `ethminer -C -F 127.0.0.1:8546`
+To start mining you need to run a miner, for example `ethminer`
+To start mining with ethminer run (`-C` is for cpu only mining) `ethminer -C -F 127.0.0.1:8546`
 
 For parity you can use this custom chain file (`parity_prv.json`):
 ```
@@ -130,4 +130,6 @@ For parity you can use this custom chain file (`parity_prv.json`):
 }
 ```
 
-to start parity with this custom chain use `parity --chain /path_to/parity_prv.json`
+To start parity with this custom chain use 
+
+`parity --chain /path_to/parity_prv.json`
