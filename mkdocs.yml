@@ -9,7 +9,7 @@ pages:
     - 'How to set up a private network using mantis and parity clients': Example-Configuration-for-Private-Network-Using-Parity.md
     - 'How to set up a private network using mantis and geth clients': Create-a-Private-Network-Using-geth-and-mantis-Clients.md
     - 'How to configure the mantis client': General-Configuration.md
-    - 'How to configure the mist browser to connect to the mantis client': Mist-Integration-Testing-Report.md
+    - 'How to configure the mist browser to connect to the mantis client': How-to-configure-the-mist-browser-to-connect-to-the-mantis-client.md
   - 'Test Reports': 
     - 'Reports': Developer-Test-Reports.md
     - 'Fast, Regular and Bootstrap Sync':
