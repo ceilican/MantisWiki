@@ -9,6 +9,10 @@ Download the [mantis-cli-beta1-bootstrap-db](https://s3.eu-central-1.amazonaws.c
 
 `md5sum mantis-cli-beta1-bootstrap-db.zip`
 
+OR on Windows
+
+`CertUtil -hashfile mantis-cli-beta1-bootstrap-db.zip MD5` 
+
 The result should read 
 
 `3a7bceeb1816de2e481d6a280c73e4e1 mantis-cli-beta1-bootstrap-db.zip`
@@ -27,6 +31,10 @@ Start the client (using `bin\mantis`) and the client will begin to process trans
 Download the [mantis-cli-beta1-bootstrap-morden-db](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/mantis-cli-beta1-bootstrap-morden-db.zip) and generate a checksum for this file using 
 
 `md5sum mantis-cli-beta1-bootstrap-morden-db.zip`
+
+OR on Windows
+
+`CertUtil -hashfile mantis-cli-beta1-bootstrap-morden-db.zip MD5` 
 
 The result should read 
 
