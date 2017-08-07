@@ -1,0 +1,25 @@
+site_name: Mantis
+theme: readthedocs
+pages:
+  - Home: index.md
+  - 'How To':
+    - 'How to install mantis on Linux': Install-Client-on-Linux-Optionally-Using-Bootstrap-Chain-Database.md
+    - 'How to install mantis on Windows 10': Install-Mantis-on-Windows-10-Optionally-Using-Bootstrap-Database.md
+    - 'How to use the bootstrap database for Ethereum Classic and Morden': Bootstrap-Database-Download-Links.md
+    - 'How to set up a private network using mantis and parity clients': Example-Configuration-for-Private-Network-Using-Parity.md
+    - 'How to set up a private network using mantis and geth clients': Create-a-Private-Network-Using-geth-and-mantis-Clients.md
+    - 'How to configure the mantis client': General-Configuration.md
+    - 'How to configure the mist browser to connect to the mantis client': Mist-Integration-Testing-Report.md
+  - 'Test Reports': 
+    - 'Reports': Developer-Test-Reports.md
+    - 'Fast, Regular and Bootstrap Sync':
+      - '3 runs on EC2': AlanMc---Testing-fast-download.md
+      - 'EC2 run stopped': client-fast-sync-testing.md
+      - 'Regular sync completed': Client-sync-testing.md
+      - 'Fast Sync on developers machine': 'Testing-fast-sync,-default-settings-(--changes-during-syncing).md'
+      - 'Fast Sync on developers machine': Testing-fast-sync---linux.md
+    - 'JSON API':
+      - 'Mist integration': Mist-Integration-Testing-Report.md
+      - 'RPC Tx sending notes': RPC-testing---sending-transactions-notes.md
+    - 'Private Networks and Mining':
+      - 'Private Network': Private-Network-Mining-Tests.md

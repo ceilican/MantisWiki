@@ -10,7 +10,7 @@ This wiki contains a collection of `How To's` and a record of the test runs that
 - [How to set up a private network using mantis and parity clients](Example-Configuration-for-Private-Network-Using-Parity)
 - [How to set up a private network using mantis and geth clients](Create-a-Private-Network-Using-geth-and-mantis-Clients)
 - [How to configure the mantis client](General-Configuration)
-- [How to configure the mist browser to connect to the mantis client]()
+- [How to configure the mist browser to connect to the mantis client](How-to-configure-the-mist-browser-to-connect-to-the-mantis-client)
 
 
 For information on building the code and a quickstart guide visit the [mantis code repository](https://github.com/input-output-hk/etc-client)
