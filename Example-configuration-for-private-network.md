@@ -1,25 +1,8 @@
 To run mantis with private network you have to
-mantis -Dconfig.file=path_to_configuration_file.conf
+`mantis -Dconfig.file=path_to_configuration_file.conf`
+You have to update configuration_file.conf to set correct bootstrap node addresses and patch to custom genesis file (with parity conf you also have to update bootstrap nodes)
 
-example genesis configuration for mantis is (`prv.json`)
-```
-{
-  "difficulty": "0x200",
-  "extraData": "0x00",
-  "gasLimit": "0x2fefd8",
-  "nonce": "0x0000000000000042",
-  "ommersHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-  "timestamp": "0x0",
-  "coinbase": "0x0000000000000000000000000000000000000000",
-  "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-  "alloc": {
-    "d7a681378321f472adffb9fdded2712f677e0ba9": {"balance": "1606938044258990275541962092341162602522202993782792835301376"}
-  }
-}
-
-```
-
-example application configuration file for mantis is (configuration_file.conf)
+Example application configuration file for mantis is (configuration_file.conf)
 ```
 include "application.conf"
 include "network.conf"
@@ -63,11 +46,27 @@ mantis {
   }
 }
 ```
+Example genesis configuration for mantis is (`prv.json`)
+```
+{
+  "difficulty": "0x200",
+  "extraData": "0x00",
+  "gasLimit": "0x2fefd8",
+  "nonce": "0x0000000000000042",
+  "ommersHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+  "timestamp": "0x0",
+  "coinbase": "0x0000000000000000000000000000000000000000",
+  "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "alloc": {
+    "d7a681378321f472adffb9fdded2712f677e0ba9": {"balance": "1606938044258990275541962092341162602522202993782792835301376"}
+  }
+}
+```
 
 to start mining you need external miner, for example `ethminer`
 to start mining with ethminer run (`-C` is for cpu only mining) `ethminer -C -F 127.0.0.1:8546`
 
-for parity you can use this custom chain file (`parity_prv.json`):
+For parity you can use this custom chain file (`parity_prv.json`):
 ```
 {
   "name": "prv",
@@ -115,7 +114,8 @@ for parity you can use this custom chain file (`parity_prv.json`):
     "ommersHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347"
   },
   "nodes": [
-   //put here addresses of other nodes in network "enode://c2328c3e7857106585dbb59b712ac2ab9443d4f0b55b77451fbf33c0dda58b882f0683c4c9222cbf8d1d6893e7f926d487630810202a2c75ec6dd996dbe84715@192.168.0.12:30303"
+   //put here addresses of other nodes in network
+"enode://c2328c3e7857106585dbb59b712ac2ab9443d4f0b55b77451fbf33c0dda58b882f0683c4c9222cbf8d1d6893e7f926d487630810202a2c75ec6dd996dbe84715@192.168.0.12:30303"
   ],
   "accounts": {
     "d7a681378321f472adffb9fdded2712f677e0ba9": {
