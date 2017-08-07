@@ -48,3 +48,4 @@
 * 10:45 CEST 7th of August Block: 3004252/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 1/6 (0 blacklisted). Asking for block headers but getting empty responses from peer `Received 0 block headers in 268 ms`, restarted, now it is syncing again
 * 16:46 CEST Block: 3004252/4194826. State: 21781789/21781789 nodes. Peers waiting_for_response/connected: 5/6 (1 blacklisted). 
 * 17:23 CEST sync was stuck on 3004252 it was showing only that it is downloading block bodies and receipts but was not asking for block headers, after restart I noticed that it is also asking for block headers but best block is not changing
+* 19:40 CEST Block: 3029148/4194826. State: 21781789/21781789 nodes. sync was stuck in `Received 0 block headers in 256 ms` loop which we found previously, restarting
