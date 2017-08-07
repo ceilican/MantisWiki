@@ -4,7 +4,7 @@ This page provides links to some of the test reports produced by the developers 
 
 ### Fast, Regular and Bootstrap Sync 
 
- - [3 runs on EC2](Alan-Mc:-Testing-fast-download)
+ - [3 runs on EC2](AlanMc---Testing-fast-download)
  - [EC2 run stopped](client-fast-sync-testing)
  - [Regular sync completed](Client-sync-testing)
  - [Fast Sync on developers machine](Testing-fast-sync,-default-settings-(--changes-during-syncing))
