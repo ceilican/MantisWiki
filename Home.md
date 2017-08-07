@@ -4,6 +4,11 @@ For more information on Ethereum classic see the [Ethereum Classic website](http
 
 This wiki contains a collection of `How To's` and a record of the test runs that have been done over the recent  Beta testing period.  
 
+- [How to install mantis on Linux](Install-Client-on-Linux-Optionally-Using-Bootstrap-Chain-Database)
+- [How to install mantis in Windows 10]()
+- [How to use the Bootstrap database for Ethereum Classic]()
+- [How to use the Bootstrap database for Ethereum Classic]()
+
 
 For information on building the code and a quickstart guide visit the [mantis code repository](https://github.com/input-output-hk/etc-client)
 
