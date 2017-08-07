@@ -28,11 +28,11 @@ Date:   Thu Aug 3 17:32:03 2017 -0300
 
 ### Syncing (Fast Sync)
 
-Synced for ~7-8 hours without any problems, last status:
+Synced for ~15-16 hours without any problems, last status:
 ```
-15:07:54 Block: 1194192/4213768. Peers waiting_for_response/connected: 6/5 (0 blacklisted). State: 16621537/16634161 nodes.
+20:59:50 Block: 1355352/4213768. Peers waiting_for_response/connected: 4/4 (0 blacklisted). State: 18054264/18068629 nodes.
 ```
-Size of the database: 5.10GB.
+Size of the database: 5.83GB.
 
 ### Private chain with mining
 
