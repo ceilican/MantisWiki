@@ -1,4 +1,4 @@
-To setup geth - etc-client private network:
+To setup geth and mantis private network:
 
 Create a file named custom.json  with blockchain definition:
 ```
@@ -96,17 +96,17 @@ Create a file named custom.json  with blockchain definition:
   ]
 }
 ```
-place it in `[geth_data_dir]/custom`  directory
+Place it in `[geth_data_dir]/custom`  directory
 
-run geth 3.5 with
+Run geth 3.5 with
 ```
 ./geth --chain=custom --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1
 ```
-run geth 3.4 with
+Run geth 3.4 with
 ```
 ./geth --chain-config="[PATH_TO_CUSTOM_JSON]" --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1
 ```
-Add file with custom etc-client configuration `private-genesis.json` :
+Add file with custom mantis configuration `private-genesis.json` :
 
 ```
 {
@@ -123,10 +123,10 @@ Add file with custom etc-client configuration `private-genesis.json` :
   }
 }
 ```
-update `application.conf`
+Update mantis configuration ...
 
 set `bootstrap-nodes` to geth node address
-set `coinbase`  to some address
+set `coinbase` to some address
 set `custom-genesis-file`  to point to `private-genesis.json` 
 set `do-fast-sync = false`
 
@@ -135,12 +135,11 @@ And running geth with
 
 `geth --chain=custom --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1 console`
 
-then in console you can execute `admin.nodeInfo`  command which prints node address
+... then in console you can execute `admin.nodeInfo`  command which prints node address
 
-after that you can run etc-client with `sbt run` 
+To mine with mantis client run the ethminer miner - `ethminer -C -F 127.0.0.1:8545` 
 
-to mine with ours client use ethminer `ethminer -C -F 127.0.0.1:8545` 
-to mine with geth use 
+Or to mine with geth use 
 ```
 ./geth --chain=custom --cache=1024 --maxpeers 1 --rpc --rpcapi eth,web3,personal,admin --datadir geth_data_dir --rpcport 8545 --port 30309 --nodiscover --identity "TestnetMainNode" --networkid 1 --mine --etherbase '0x4963d1B82050A41af54a8018Da9f04341b16910b'
 ```
