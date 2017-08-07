@@ -15,7 +15,7 @@ storage.conf
 sync.conf
 ```
 ### application.ini
-This is the entry point for the application configuration, it points the application at the `mantis.conf` file, and passes some a stack size to the JVM. This is required to allow the EVM a sufficient stack size.
+This is the entry point for the application configuration, it points the application at the `mantis.conf` file, and passes a stack size to the JVM. This is required to allow the EVM a sufficient stack size.
 ```
 -Dconfig.file=./conf/mantis.conf -Dlogback.configurationFile=./conf/logback.xml -J-Xss10M
 ```
