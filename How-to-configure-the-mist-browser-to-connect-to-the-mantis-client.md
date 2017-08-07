@@ -10,7 +10,7 @@ Follow [these instructions](Home) in order to setup and run the mantis client.
 
 ## Connecting Mist Browser to Mantis
 
-If you are running Mantis with RPC default port `8548` you need to start Ethereum wallet as:
+If you are running Mantis with RPC default port `8546` you need to start Ethereum wallet as:
 
 **Windows**
 - Open cmd.exe
