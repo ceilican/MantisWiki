@@ -4,6 +4,8 @@ To run mantis with private network you have to start with:
 
 You have to update configuration_file.conf to set correct bootstrap node addresses and patch to custom genesis file (with parity conf you also have to update bootstrap nodes)
 
+To run multiple nodes on single machine you have to set unique ports for each nodes as well as unique `datadir`
+
 Example application configuration file for mantis is (configuration_file.conf)
 ```
 include "application.conf"
