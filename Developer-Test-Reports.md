@@ -13,6 +13,7 @@ This page provides links to some of the test reports produced by the developers 
 ### JSON API
 
  - [Mist integration](Mist-Integration-Testing-Report)
+ - [JSON API Test](https://docs.google.com/spreadsheets/d/1ErJeyDBFJyv0zwdRtYcDwHiB56fkUambpzwn_gQWm-o/edit?usp=sharing) 
  - [RPC Tx sending notes](RPC-testing---sending-transactions-notes)
 
 ### Private Networks and Mining
