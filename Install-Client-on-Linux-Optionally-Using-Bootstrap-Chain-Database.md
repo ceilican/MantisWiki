@@ -79,7 +79,7 @@ Note that for long running processes on remote machines it is recommended to use
 Following the instructions outlined above including using the bootstrap database should result in a startup similar to the following 
 ![](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/startup_mantis.png)
 
-The first block should be around 4.1 million as this is where the snapshot was taken. If you have not used the snapshot 
+The first block should be around 4.1 million as this is where the snapshot was taken.
 The default datadir is `~/.mantis`. To change this edit the `storage.conf` file in the `conf` folder.
 
 ![](https://s3.eu-central-1.amazonaws.com/iohk.etc-client.snapshots/data_dir_mantis.png)
