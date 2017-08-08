@@ -28,7 +28,7 @@ unzip ~/mantis-cli-beta1-bootstrap-db.zip
 ```
 This should create a folder `~/.mantis/leveldb` containing the database snapshot files.
 
-Start the client (using `bin\mantis`) and the client will begin to process transactions and blocks at the point the database snapshot was taken reducing the time needed to sync to the most recent block to minutes rather than hours ... 
+Start the client (using `bin\mantis`) and the client will begin to process transactions and blocks at the point the database snapshot was taken reducing the time needed to sync to the most recent block to an hour rather than eight hours ... 
 
 ### Morden Bootstrap
 
