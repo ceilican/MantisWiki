@@ -40,6 +40,8 @@ When the file is fully downloaded (on linux) run the following command
 
 ```md5sum mantis-cli-beta1-bootstrap-db.zip```
 
+On MacOS ```md5 mantis-cli-beta1-bootstrap-db.zip```
+
 This should result in a line identical to the following ...
 
 ```3a7bceeb1816de2e481d6a280c73e4e1  mantis-cli-beta1-bootstrap-db.zip```
@@ -66,6 +68,8 @@ mantis-0.3-cli-beta
 The `lib` folder contains all the jars required to run the client, the `conf` folder contains the configuration files needed to alter the user settings of the client and the `bin` folder contains the scripts to start the client.
 
 ### Run the Client
+
+On MacOS use `chmod +x bin/mantis` 
 
 From the `mantis-0.3-cli-beta` folder use 
 
