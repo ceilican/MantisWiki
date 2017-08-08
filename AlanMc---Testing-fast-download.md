@@ -75,3 +75,5 @@ Then windows does not support paths in `application.ini` or `NativePRNG` had to 
 
 Run began successfully at 14.50 pm Wednesday 2nd August.
 (Stopped 3 times to check launch error fix on Windows. )
+
+Running and staying synchronized until 10:45 August 8th.
