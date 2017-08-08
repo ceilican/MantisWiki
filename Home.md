@@ -12,7 +12,18 @@ This wiki contains a collection of `How To's` and a record of the test runs that
 - [How to configure the mantis client](General-Configuration)
 - [How to configure the mist browser to connect to the mantis client](How-to-configure-the-mist-browser-to-connect-to-the-mantis-client)
 
+### Quickstart
 
 For information on building the code and a quickstart guide visit the [mantis code repository](https://github.com/input-output-hk/etc-client)
 
+### Download
+
 To download the latest release visit [releases](https://github.com/input-output-hk/etc-client/releases)
+
+### Feedback 
+
+Feedback gratefully received through the Ethereum Classic Slack (#mantis_client_bugs). 
+
+### Known Issues
+
+There is a list of known issues in the 'RELEASE' file located in the root of the installation.
