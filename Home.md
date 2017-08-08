@@ -4,7 +4,7 @@ For more information on Ethereum Classic see the [Ethereum Classic website](http
 
 This wiki contains a collection of `How To's` and a record of the test runs that have been done over the recent  Beta testing period.  
 
-- [How to install mantis on Linux](Install-Client-on-Linux-Optionally-Using-Bootstrap-Chain-Database)
+- [How to install mantis on Linux and MacOS](Install-Client-on-Linux-Optionally-Using-Bootstrap-Chain-Database)
 - [How to install mantis on Windows 10](Install-Mantis-on-Windows-10-Optionally-Using-Bootstrap-Database)
 - [How to use the bootstrap database for Ethereum Classic and Morden](Bootstrap-Database-Download-Links)
 - [How to set up a private network using mantis and parity clients](Example-Configuration-for-Private-Network-Using-Parity)
