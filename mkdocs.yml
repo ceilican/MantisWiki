@@ -12,14 +12,15 @@ pages:
     - 'How to configure the mist browser to connect to the mantis client': How-to-configure-the-mist-browser-to-connect-to-the-mantis-client.md
   - 'Test Reports': 
     - 'Reports': Developer-Test-Reports.md
-    - 'Fast, Regular and Bootstrap Sync':
+    - 'Fast, Regular and Bootstrap Sync': 
       - '3 runs on EC2': AlanMc---Testing-fast-download.md
-      - 'EC2 run stopped': client-fast-sync-testing.md
+      - 'EC2 run stopped': Client-fast-sync-testing.md
       - 'Regular sync completed': Client-sync-testing.md
-      - 'Fast Sync on developers machine': 'Testing-fast-sync,-default-settings-(--changes-during-syncing).md'
+      - 'Fast Sync on developers machine': Testing-fast-sync,-default-settings-(--changes-during-syncing).md
       - 'Fast Sync on developers machine': Testing-fast-sync---linux.md
     - 'JSON API':
       - 'Mist integration': Mist-Integration-Testing-Report.md
       - 'RPC Tx sending notes': RPC-testing---sending-transactions-notes.md
     - 'Private Networks and Mining':
       - 'Private Network': Private-Network-Mining-Tests.md
+      - 'Private Network with Geth': Private-Network-Geth-Tests.md
