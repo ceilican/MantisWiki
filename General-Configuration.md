@@ -56,6 +56,15 @@ This file controls the level of logging to both the console and file. By default
 ### Common Configuration Options
 This section details how to change some of the more common configuration options.
 
+#### Morden
+By default the client is configured to connect and download the `classic` chain. To change this to the `morden` test chain un-comment the line 
+
+`# include "morden.conf"`
+
+in the `mantis.conf` file such that it reads 
+
+`include "morden.conf"`
+
 #### Data Folder
 By default the blockchain and all other files that mantis creates are stored in the users home folder under a sub folder called `.mantis`. This setting is found in the `storage.conf` file.
 
