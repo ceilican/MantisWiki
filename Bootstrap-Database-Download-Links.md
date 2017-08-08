@@ -13,6 +13,10 @@ OR on Windows
 
 `CertUtil -hashfile mantis-cli-beta1-bootstrap-db.zip MD5` 
 
+OR on MacOS
+
+`md5 mantis-cli-beta1-bootstrap-db.zip`
+
 The result should read 
 
 `3a7bceeb1816de2e481d6a280c73e4e1 mantis-cli-beta1-bootstrap-db.zip`
@@ -36,6 +40,11 @@ OR on Windows
 
 `CertUtil -hashfile mantis-cli-beta1-bootstrap-morden-db.zip MD5` 
 
+OR on MacOS
+
+`md5 -hashfile mantis-cli-beta1-bootstrap-morden-db.zip` 
+
+
 The result should read 
 
 ```
@@ -48,6 +57,8 @@ cd ~/.mantis
 unzip ~/mantis-cli-beta1-bootstrap-morden-db.zip
 ```
 This should create a folder `~/.mantis/leveldb` containing the database snapshot files.
+
+Un comment the reference to `morden.conf` in the `mantis.conf` configuration in order to enable morden settings.
 
 Start the client (using `bin\mantis`) and the client will begin to process transactions and blocks at the point the database snapshot was taken reducing the time needed to sync to the most recent block to minutes rather than hours ... 
 
