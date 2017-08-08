@@ -21,11 +21,14 @@ The result should read
 
 `3a7bceeb1816de2e481d6a280c73e4e1 mantis-cli-beta1-bootstrap-db.zip`
 
-On Linux and MacOS unzip this to the datadir folder. Assuming the default `$HOME/.mantis` ...
+On Linux unzip this to the datadir folder. Assuming the default `$HOME/.mantis` ...
 ```
 cd ~/.mantis
 unzip ~/mantis-cli-beta1-bootstrap-db.zip
 ```
+
+On MacOS use `tar xzvf mantis-cli-beta1-bootstrap-db.zip`
+
 On Windows extract the files by right clicking on the zip file and using `Extract All...`
 
 This should create a folder `~/.mantis/leveldb` containing the database snapshot files.
@@ -53,11 +56,12 @@ The result should read
 d90949754c0990b1ce72aab2decf0bea  mantis-cli-beta1-bootstrap-morden-db.zip
 ```
 
-On Linux and MacOS Unzip this to the datadir folder. Assuming the default `$HOME/.mantis` ...
+On Linux unzip this to the datadir folder. Assuming the default `$HOME/.mantis` ...
 ```
 cd ~/.mantis
 unzip ~/mantis-cli-beta1-bootstrap-morden-db.zip
 ```
+On MacOS use `tar xzvf mantis-cli-beta1-bootstrap-morden-db.zip`
 
 On Windows extract the files by right clicking on the zip file and using `Extract All...`
 
