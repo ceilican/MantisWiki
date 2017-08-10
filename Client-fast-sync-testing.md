@@ -54,3 +54,4 @@
 * 10:29 CEST 9th of August it is in loop asking for block headers from peer that is responding with 0 block headers, Block: 3322756/4194826. State: 21781789/21781789 nodes. 
 * 10:41 CEST **restarted with** `fix/randomPeerSelection` branch which addresses issue of sticking with one peer when asking for block headers, client is syncing again
 * 11:32 CEST Block: 3492412/4194826. State: 21781789/21781789 nodes. No dead loop, connected to 6 peers
+* 10:42 CEST Block: 4216099 client switched to regular sync, issue with ompty block headers response solved itself without restarting
