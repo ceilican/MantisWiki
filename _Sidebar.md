@@ -1,6 +1,6 @@
-[How To's](https://github.com/input-output-hk/etc-client/wiki)
+[How To's](https://github.com/input-output-hk/mantis/wiki)
 
-[Releases](https://github.com/input-output-hk/etc-client/releases)
+[Releases](https://github.com/input-output-hk/mantis/releases)
 
 [Test Reports](Developer-Test-Reports)
 
