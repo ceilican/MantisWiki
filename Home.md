@@ -14,11 +14,11 @@ This wiki contains a collection of `How To's` and a record of the test runs that
 
 ### Quickstart
 
-For information on building the code and a quickstart guide visit the [mantis code repository](https://github.com/input-output-hk/etc-client)
+For information on building the code and a quickstart guide visit the [mantis code repository](https://github.com/input-output-hk/mantis)
 
 ### Download
 
-To download the latest release visit [releases](https://github.com/input-output-hk/etc-client/releases)
+To download the latest release visit [releases](https://github.com/input-output-hk/mantis/releases)
 
 ### Feedback 
 
