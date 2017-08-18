@@ -14,6 +14,8 @@ Q is public key that can be used after encoding to calculate transaction sender 
 sR is point wise multiplication of point R by scalar s
 eG is point wise multiplication of point G (specific to cureve used for ethereum) by scalar s which is integer representation of hash of message that was signed (RLP encoded transaction)
 
+Ours implementation of ECDSA recovery is here (it includes changes from EIP-155): https://github.com/input-output-hk/mantis/blob/master/src/main/scala/io/iohk/ethereum/crypto/ECDSASignature.scala
+
 Transaction address is calculated as 20 right most bytes of kec256(encoded(q))
 
 Transaction is prepared for signing by RLP encoiding its fields and hashing the resulted byte array with kec256, specific fields for encoding are defined in yellow paper, but they changed after EIP-155 (this EIP does not have target block but in geth and parity target block is set to 3 000 000)
