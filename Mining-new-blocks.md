@@ -1,6 +1,6 @@
 Currently our client supports mining only with external miner connected through RPC (like ETH miner)
 
-We have to generate 3 values for miner to work (they are prepared here https://github.com/input-output-hk/mantis/blob/3777925bed888c661f20406abdc3fed6be89fd0d/src/main/scala/io/iohk/ethereum/jsonrpc/EthService.scala#L441)
+We have to generate 3 values for miner to work (they are prepared here https://github.com/input-output-hk/mantis/blob/master/src/main/scala/io/iohk/ethereum/jsonrpc/EthService.scala#L441)
 
 Target - target difficulty of mined block, that is encoded as byte array
 
