@@ -4,7 +4,7 @@ EC digital signature contains 2 elements called s and r (x coordinate of ephemer
 
 In case of ethereum transactions there is no public key associated with transaction but it has to be recovered from transaction signature itself.
 
-Recovering ECC public from single ECDSA results in 2 possible public keys to determine which one was used to sign the transaction we have additional value v which is 27 or 28 (after block 3 000 000 it is defined by https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
+Recovering ECC public from single ECDSA results in 2 possible public keys (elliptic curve is symmetric in regards to x axis and r is x coordinate of ephemeral key so we have 2 possible y values which results in 2 possible points) to determine which one was used to sign the transaction we have additional value v which is 27 or 28 (after block 3 000 000 it is defined by https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).
 27 and 28 are just arbitrary values picked to represent 2 recovered public keys, base on them reconstruct ephemeral public key base on r (to do that we are using spongy castle library and translate v to recovery id 28 is 3 and 27 is 2).
 
 Recovery formula is:
